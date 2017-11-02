@@ -57,7 +57,7 @@ body{
   font-size: 2em;
 }
 
-@media screen and (max-width : 667px){
+@media screen and (max-width : 900px){
   .main{
     grid-template-columns: 100%;
     grid-template-rows: 20% 10em;
