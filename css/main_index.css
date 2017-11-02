@@ -57,8 +57,7 @@ body{
   font-size: 2em;
 }
 
-@media only screen
-and (max-device-width : 836px){
+@media screen and (max-width : 667px){
   .main{
     grid-template-columns: 100%;
     grid-template-rows: 20% 10em;
