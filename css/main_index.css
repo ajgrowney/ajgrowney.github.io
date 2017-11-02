@@ -58,7 +58,7 @@ body{
 }
 
 @media only screen
-and (max-device-width: 836px){
+and (max-device-width : 836px){
   .main{
     grid-template-columns: 100%;
     grid-template-rows: 20% 10em;
