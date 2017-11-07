@@ -1,22 +1,35 @@
+function getInvolveText(){
+  return "Testing Involvement Text";
+}
+
+
 function techClick(){
+  //Button Showing
   $("#involve").show();
   $("#lead").show();
   $("#tech").hide();
+  //Text Showing
 }
 function leadClick(){
   $("#involve").show();
   $("#lead").hide();
   $("#tech").show();
+  //Text Showing
+
 }
 function involveClick(){
   $("#involve").hide();
   $("#lead").show();
   $("#tech").show();
+  //Text Showing
+  $("#resumeTitle").html(function(){
+    getInvolveText();
+  });
 
 }
 
 $(document).ready(function(){
-
+  $(".resumeInfo").hide();
   $("#tech").click(function(){
     techClick();
   });
