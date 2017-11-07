@@ -22,10 +22,9 @@ function involveClick(){
   $("#lead").show();
   $("#tech").show();
   //Text Showing
-  $("#resumeTitle").html(function(){
-    getInvolveText();
-  });
-
+  $("#resumeTitle").html("Involve Title Field");
+  $("#resumeText").html("involve text field");
+  $(.resumeInfo).show();
 }
 
 $(document).ready(function(){
