@@ -35,7 +35,7 @@ function involveClick(){
 }
 
 $(document).ready(function(){
-  $(".resumeInfo").hide();
+  //$(".resumeInfo").hide();
   $("#tech").click(function(){
     techClick();
   });
