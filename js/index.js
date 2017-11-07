@@ -1,7 +1,12 @@
 function getInvolveText(){
   return "Testing Involvement Text";
 }
-
+function getLeadText(){
+  return "Testing Leadership Text";
+}
+function getTechText(){
+  return "Testing Technical Text";
+}
 
 function techClick(){
   //Button Showing
@@ -10,7 +15,7 @@ function techClick(){
   $("#tech").hide();
   //Text Showing
   $("#resumeTitle").html("Tech Title Field");
-  $("#resumeText").html("Tech text field");
+  $("#resumeText").html(getTechText());
   $(".resumeInfo").show();
 }
 function leadClick(){
@@ -20,7 +25,7 @@ function leadClick(){
   //Text Showing
   //Text Showing
   $("#resumeTitle").html("Lead Title Field");
-  $("#resumeText").html("Lead text field");
+  $("#resumeText").html(getLeadText());
   $(".resumeInfo").show();
 
 }
@@ -35,6 +40,7 @@ function involveClick(){
 }
 
 $(document).ready(function(){
+  
   $(".resumeInfo").hide();
   $("#tech").click(function(){
     techClick();
