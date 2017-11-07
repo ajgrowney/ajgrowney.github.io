@@ -9,12 +9,19 @@ function techClick(){
   $("#lead").show();
   $("#tech").hide();
   //Text Showing
+  $("#resumeTitle").html("Tech Title Field");
+  $("#resumeText").html("Tech text field");
+  $(".resumeInfo").show();
 }
 function leadClick(){
   $("#involve").show();
   $("#lead").hide();
   $("#tech").show();
   //Text Showing
+  //Text Showing
+  $("#resumeTitle").html("Lead Title Field");
+  $("#resumeText").html("Lead text field");
+  $(".resumeInfo").show();
 
 }
 function involveClick(){
@@ -24,7 +31,7 @@ function involveClick(){
   //Text Showing
   $("#resumeTitle").html("Involve Title Field");
   $("#resumeText").html("involve text field");
-  $(.resumeInfo).show();
+  $(".resumeInfo").show();
 }
 
 $(document).ready(function(){
