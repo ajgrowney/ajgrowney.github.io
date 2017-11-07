@@ -40,8 +40,8 @@ function involveClick(){
 }
 
 $(document).ready(function(){
-  
-  $(".resumeInfo").hide();
+
+  $(".resumeInfo").css('visibility','none');
   $("#tech").click(function(){
     techClick();
   });
