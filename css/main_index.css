@@ -5,7 +5,7 @@ body{
 .main{
   display: grid;
   grid-template-columns: 35% 65%;
-  grid-template-rows: 25em;
+  grid-template-rows: 60%;
   margin-bottom: 0px;
 
 }
