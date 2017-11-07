@@ -14,7 +14,6 @@ body{
   grid-column: 1;
   background-color: #A8A8A8;
   padding-top: 30%;
-  height: 80%;
 }
 .main_buttons button{
   display: block;

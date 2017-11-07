@@ -30,7 +30,7 @@ function involveClick(){
   $("#tech").show();
   //Text Showing
   $("#resumeTitle").html("Involve Title Field");
-  $("#resumeText").html("involve text field");
+  $("#resumeText").html(getInvolveText());
   $(".resumeInfo").show();
 }
 
