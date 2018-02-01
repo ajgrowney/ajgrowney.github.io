@@ -1,11 +1,11 @@
 function getInvolveText(){
-  return "Testing Involvement Text";
+  return "Testing Involve Text";
 }
 function getLeadText(){
-  return "Testing Leadership Text";
+  return "Testing Lead Text";
 }
 function getTechText(){
-  return "Testing Technical Text";
+  return "Testing Tech Text";
 }
 
 function techClick(){
