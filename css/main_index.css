@@ -132,7 +132,14 @@ body{
     font-size: 1.5em;
   }
   .contact_info{
-    height: 7em;
+    height: 12em;
+  }
+  .contact_info img{
+    height: 3em;
+    width: 3em;
+  }
+  .social_media{
+    align-content: center;
   }
 
 }
