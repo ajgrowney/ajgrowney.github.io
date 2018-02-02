@@ -10,22 +10,26 @@ body{
   background-color: #A8A8A8;
 
 }
+/*-------Button Styling---------*/
 .main_buttons{
+  /*--Location--*/
 	position: fixed;
   width: 100%;
 	background-color: transparent;
 }
 .main_buttons button{
+  /*--Positioning--*/
   display: inline-block;
-  margin: 1em;
   float: right;
+  /*--Text and Box Style--*/
   background-color: transparent;
   color: white;
   text-decoration: underline;
   font-family: monospace;
   font-weight: bold;
   border: none;
-  border-radius: 10%;
+  /*---Button Spacing---*/
+  margin: 1em;
   padding: 1em;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -33,6 +37,7 @@ body{
 .mainBut:hover{
   color: #A8A8A8;
 }
+
 .profile_photo{
   grid-row: 1;
   grid-column: 1;
@@ -66,7 +71,7 @@ body{
     grid-template-columns: 100%;
     grid-template-rows: 20% 10em;
   }
-  .main_buttons{
+  .about{
     grid-row: 2;
     grid-column: 1;
     padding-top: 5%;
@@ -75,7 +80,7 @@ body{
     display: inline-block;
     margin: 0.5em;
   }
-  .main_info{
+  .profile_photo{
     grid-row: 1;
     grid-column: 1;
   }

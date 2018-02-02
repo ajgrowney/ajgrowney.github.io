@@ -1,55 +1,10 @@
-function getInvolveText(){
-  return "Testing Involve Text";
-}
-function getLeadText(){
-  return "Testing Lead Text";
-}
-function getTechText(){
-  return "Testing Tech Text";
-}
-
-function techClick(){
-  //Button Showing
-  $("#involve").show();
-  $("#lead").show();
-  $("#tech").hide();
-  //Text Showing
-  $("#resumeTitle").html("Tech Title Field");
-  $("#resumeText").html(getTechText());
-  $(".resumeInfo").show();
-}
-function leadClick(){
-  $("#involve").show();
-  $("#lead").hide();
-  $("#tech").show();
-  //Text Showing
-  //Text Showing
-  $("#resumeTitle").html("Lead Title Field");
-  $("#resumeText").html(getLeadText());
-  $(".resumeInfo").show();
-
-}
-function involveClick(){
-  $("#involve").hide();
-  $("#lead").show();
-  $("#tech").show();
-  //Text Showing
-  $("#resumeTitle").html("Involve Title Field");
-  $("#resumeText").html(getInvolveText());
-  $(".resumeInfo").show();
-}
-
 $(document).ready(function(){
 
-  $(".resumeInfo").css('visibility','none');
-  $("#tech").click(function(){
-    techClick();
+  $("#resume").click(function(){
   });
-  $("#lead").click(function(){
-    leadClick();
+  $("#skills").click(function(){
   });
-  $("#involve").click(function(){
-    involveClick();
+  $("#currentProjects").click(function(){
   });
 
 });
