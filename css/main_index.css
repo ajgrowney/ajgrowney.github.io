@@ -11,6 +11,7 @@ body{
 
 }
 .main_buttons{
+	position: static;
 	background-color: transparent;
 }
 .main_buttons button{
