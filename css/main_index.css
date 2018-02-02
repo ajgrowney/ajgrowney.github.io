@@ -54,6 +54,7 @@ body{
 
 .about{
   padding-top: 1.2em;
+  align-self: center;
   grid-row: 1;
   grid-column: 2;
   background-color: black;
