@@ -23,6 +23,7 @@ body{
   color: white;
   text-decoration: underline;
   font-family: monospace;
+  font-weight: bold;
   border: none;
   border-radius: 10%;
   padding: 1em;
