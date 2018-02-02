@@ -55,13 +55,16 @@ body{
 .about{
   padding-top: 1.2em;
   align-self: center;
+  justify-content: center;
   grid-row: 1;
   grid-column: 2;
+  height: 100%;
   background-color: black;
   color:white;
   padding-bottom: 1em;
   padding-left: 5%;
 }
+
 
 .about h2{
   letter-spacing: 0.2em;
