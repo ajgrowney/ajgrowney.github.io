@@ -14,7 +14,7 @@ body{
 	background-color: transparent;
 }
 .main_buttons button{
-  display: block;
+  display: inline-block;
   margin: 2em;
   background-color: transparent;
   color: white;
