@@ -7,9 +7,10 @@ body{
 .main{
   display: grid;
   grid-template-columns: 65% 35%;
-  grid-template-rows: auto;
+  grid-template-rows: 40em auto;
   margin-bottom: 0px;
   background-color: black;
+  align-content: stretch;
 
 }
 /*-------Button Styling---------*/
@@ -42,14 +43,17 @@ body{
 .profile_photo{
   grid-row: 1;
   grid-column: 1;
+  height: 100%;
   background-image: url("../img/pro_pic.jpg");
   background-size: 100% 100%;
   font-family: 'Quicksand', 'Regular';
   color: white;
   font-size: 2.5em;
   padding-left: 1em;
-  padding-top: 50%;
   padding-bottom: 5%;
+}
+#profile_info{
+  align-self: end;
 }
 
 .about{
@@ -77,7 +81,7 @@ body{
 @media (max-width:736px){
   .main{
     grid-template-columns: 100%;
-    grid-template-rows: 25% 15em;
+    grid-template-rows: 25em 15em;
   }
   .about{
     grid-row: 2;
@@ -91,6 +95,7 @@ body{
   .profile_photo{
     grid-row: 1;
     grid-column: 1;
+    font-size: 1.5em;
   }
 
 }
