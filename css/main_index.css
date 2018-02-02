@@ -11,7 +11,8 @@ body{
 
 }
 .main_buttons{
-	position: static;
+	position: fixed;
+  width: 100%;
 	background-color: transparent;
 }
 .main_buttons button{
@@ -30,7 +31,7 @@ body{
   background-color: white;
   color: #A8A8A8;
 }
-.main_info{
+.profile_photo{
   grid-row: 1;
   grid-column: 1;
   background-image: url("../img/pro_pic.jpg");
