@@ -18,6 +18,7 @@ body{
 .main_buttons button{
   display: inline-block;
   margin: 2em;
+  float: right;
   background-color: transparent;
   color: white;
   text-decoration: underline;
