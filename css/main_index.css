@@ -12,7 +12,6 @@ body{
 }
 .main_buttons{
 	background-color: transparent;
-	padding-top: 30%;
 }
 .main_buttons button{
   display: block;
