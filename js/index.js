@@ -3,7 +3,7 @@ $(document).ready(function(){
 "As an undergraduate at the University of Kansas, I am currently studying Interdisciplinary Computing "+
 "with an emphasis in Physics, and finishing a minor in Business Administration. "+
 "<br><br>As an active member of the SELF Engineering Leadership Fellows, Beta Sigma Psi, and the St. Lawrence Center, I have had an amazing opportunity to develop "+
-"leadership, interpersonal, engineering, business, and many other skills. If you are interested in checking out what I've been working on, I am currently working on some of the links above, so please come back very soon!"+
+"leadership, interpersonal, engineering, business, and many other skills. Excited to say that the resume and skills links are live now, so please check them out!"+
 "<br><br>Thanks for coming in!"
 );
 
