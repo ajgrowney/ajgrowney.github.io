@@ -91,3 +91,10 @@ body{
   background-size: cover;
   background-color: transparent;
 }
+@media (max-width: 800px) {
+  #project_image img{
+    height: 6em;
+    width: 100%;
+    margin-left: 0%;
+  }
+}
