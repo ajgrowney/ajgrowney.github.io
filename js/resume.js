@@ -11,9 +11,9 @@ $(".gridOne").click(function(){
   if(expanded!=1){
     closeAll();
     if(mq.matches){
-      $(".main").css("grid-template-rows","15em 30em 5em 0em 5em 0em 5em 0em");
+      $(".main").css("grid-template-rows","15em 50em 5em 0em 5em 0em 5em 0em");
     }else{
-      $(".main").css("grid-template-rows","15em 25em 5em 0em 5em 0em 5em 0em");
+      $(".main").css("grid-template-rows","15em 28em 5em 0em 5em 0em 5em 0em");
     }
     $(".main").css("grid-row-gap","0.5%");
     $("#education_info").css("display","grid");
@@ -30,7 +30,7 @@ $(".gridTwo").click(function(){
   if(expanded!=2){
     closeAll();
     if(mq.matches){
-      $(".main").css("grid-template-rows","5em 0em 15em 35em 5em 0em 5em 0em");
+      $(".main").css("grid-template-rows","5em 0em 15em 58em 5em 0em 5em 0em");
 
     }else{
       $(".main").css("grid-template-rows","5em 0em 15em 25em 5em 0em 5em 0em");
@@ -49,7 +49,11 @@ $(".gridTwo").click(function(){
 $(".gridThree").click(function(){
   if(expanded!=3){
     closeAll();
-    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 40em 5em 0em");
+    if(mq.matches){
+      $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 20em 5em 0em");
+    }else{
+      $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 20em 5em 0em");
+    }
     $(".main").css("grid-row-gap","0.5%");
     $("#lead_inv_info").css("display","grid");
     $("#lead_inv_info").css("grid-template-rows","15em auto")
@@ -58,7 +62,7 @@ $(".gridThree").click(function(){
     $(".main").css("grid-template-rows","15em 0em 15em 0em 15em 0em 15em 0em");
     $(".main").css("grid-row-gap","5%");
     $("#lead_inv_info").css("display","none");
-    $("#lead_inv1 button").css("height","40em");
+    $("#lead_inv1 button").css("height","20em");
     expanded=0;
   }
 });
@@ -83,7 +87,7 @@ $(".gridFour").click(function(){
 
 $("#self_lead_but").click(function(){
   if(mq.matches){
-    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 45em 5em 0em");
+    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 55em 5em 0em");
 
   }else{
     $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 35em 5em 0em");
@@ -96,9 +100,9 @@ $("#self_lead_but").click(function(){
 });
 $("#bey_lead_but").click(function(){
   if(mq.matches){
-    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 65em 5em 0em");
+    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 75em 5em 0em");
   }else{
-    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 35em 5em 0em");
+    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 45em 5em 0em");
   }
   $("#lead_inv2").html("<div id='bey_1'>"+
   "<h2>Leadership</h2>"+
@@ -107,20 +111,22 @@ $("#bey_lead_but").click(function(){
   "<p>Promote participation of actives along with attendance of potential new members</p>"+
   "<p>Actively contact PNM's and keep chapter involved in membership updates</p>"+
   "<p><b>Results</b>: Very high quality associate member class with <b>6</b> of the 10 serving on the executive board</p>"+
-  "<div style='grid-column: 3' id='academic_chair'><h5>Academic Chair (Spring 2016 - Fall 2016)</h5>"+
-  "<p>Monitor, encourage, and motivate fellow members to achieve high academic standards</p>"+
-  "<p>Implement the Academic Draft to engage members with their peers' academic success</p>"+
-  "<p><b>Result</b>: Highest GPA by a Fraternity in <b>KU IFC Historical Records</b> at <b>3.64</b></p></div>"+
-  "</div><div id='bey_3'>"+
   "<h3>Service</h3>"+
   "<h5>Pizza and Puppies</h5>"+
   "<p>Raised over $1,500 in support of the Lawrence Humane Society by selling tickets and training at the LHS</p>"+
   "<h5>Relay for Life</h5>"+
+  "</div><div id='bey_3'>"+
+
+  "<div style='grid-column: 3' id='academic_chair'><br><br><br><h5>Academic Chair (Spring 2016 - Fall 2016)</h5>"+
+  "<p>Monitor, encourage, and motivate fellow members to achieve high academic standards</p>"+
+  "<p>Implement the Academic Draft to engage members with their peers' academic success</p>"+
+  "<p><b>Result</b>: Highest GPA by a Fraternity in <b>KU IFC Historical Records</b> at <b>3.64</b></p></div>"+
+
   "</div>");
 });
 $("#schol_hall_but").click(function(){
   if(mq.matches){
-    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 50em 5em 0em");
+    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 62em 5em 0em");
   }else{
     $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 35em 5em 0em");
   }
@@ -138,7 +144,7 @@ $("#schol_hall_but").click(function(){
 });
 $("#slc_but").click(function(){
   if(mq.matches){
-    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 45em 5em 0em");
+    $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 55em 5em 0em");
   }else{
     $(".main").css("grid-template-rows","5em 0em 5em 0em 15em 35em 5em 0em");
   }
