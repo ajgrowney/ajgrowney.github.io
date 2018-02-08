@@ -25,11 +25,11 @@ var eventPlanner2 = {
 }
 var noGracias = {
   project_type: "desktop",
-  description: "",
+  description: "Our final Software Engineering project was compeletely our own decision. Our development team decided to put together a desktop application executable game. The game was developed using the rules of a card game called 'No Thanks' and merely implemented for computer by us. Without any previous experience of using C# and Microsoft Visual Studio, I had to spend a good amount of time sifting through documentation and tutorials. My job was to design the overlay of the card table, menu screens, and animations. I was also in charge of creating a business plan for our product and being the scrum master.",
   img: ["../img/project_img/project4_1.png","../img/project_img/project4_2.png"],
   title: "No Gracias",
-  skills: ["C#", "Microsoft Visual Studio", "Product Backlog","GANTT Chart", "Scrum", "Agile Development", "UX/UI"],
-  objectives: []
+  skills: ["C#", "Microsoft Visual Studio", "Product Backlog","GANTT Chart", "Scrum", "Agile Development", "UX/UI","Animation"],
+  objectives: ["Learn C#", "Design a user friendly executable file that is performance and energy efficient", "Create a plan to get the application on the market", "Keep detailed GANTT chart and Scrum Artifacts of the project","Create animations and fun environment for the game"]
 }
 
 var myProjects = [myHome,eventPlanner, eventPlanner2, noGracias];
