@@ -46,6 +46,9 @@ body{
 .mainBut:hover{
   color: #A8A8A8;
 }
+.header{
+  height: 5em;
+}
 /*-------End of Buttons----------*/
 
 /*------Grids and Subgrids-------*/
