@@ -9,7 +9,7 @@ body{
   grid-template-columns: 65% 35%;
   grid-template-rows: 30em 15em auto;
   margin-bottom: 0px;
-  background-color: black;
+  background-color: #3A42F3;
   align-content: stretch;
 }
 /*-------Button Styling---------*/
@@ -69,7 +69,7 @@ body{
   align-self: center;
   grid-row: 1/3;
   grid-column: 2;
-  background-color: black;
+  background-color: #3A42F3;
   color: white;
   padding-bottom: 1em;
   padding-left: 5%;
@@ -91,7 +91,7 @@ body{
   font-family: 'Quicksand', 'Light';
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #A0A0A0;
+  background-color: #FF5454;
 }
 .basic_contact{
   grid-column: 1;

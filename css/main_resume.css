@@ -2,9 +2,9 @@
 .main{
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 10em 0em 10em 0em 10em 0em 10em 0em;
-  grid-row-gap: 5%;
-  background-color: white;
+  grid-template-rows: 15em 0em 15em 0em 15em 0em 15em 0em;
+  grid-row-gap: 0.75em;
+  background-color: #EC5E5E;
   align-content: stretch;
 }
 .main button{
@@ -12,8 +12,12 @@
   font-size: 3em;
   font-weight: bold;
 }
+.main button:hover{
+  font-size: 3.5em;
+}
 body{
   font-family: monospace;
+  background-color: #EC5E5E;
 }
 /*-------Button Styling---------*/
 .main_buttons{
@@ -31,7 +35,7 @@ body{
   background-color: transparent;
   color: black;
   text-decoration: underline;
-  font-family: 'Quicksand', 'Bold';
+  font-family: 'Quicksand', 'Regular';
   border: none;
   /*---Button Spacing---*/
   margin: 1em;
@@ -51,6 +55,7 @@ body{
   grid-row: 1;
   background-image: url("../img/lead_inv2.png");
   background-position: center;
+  border: none;
 }
 #education_info{
   grid-row: 2;
@@ -75,6 +80,8 @@ body{
   grid-row: 3;
   background-image: url("../img/work_exp.jpg");
   background-position: center;
+  background-size: 100% 250%;
+  border: none;
 
 }
 #work_exp_info{
@@ -94,29 +101,64 @@ body{
   grid-row: 5;
   background-image: url("../img/lead_inv1.jpg");
   background-position: center;
+  background-size: 100%;
+  border: none;
 
 }
+
 #lead_inv_info{
   grid-row: 6;
   display: none;
   font-family: 'Quicksand', 'Light';
-  font-size: 0.8em;
+  font-size: 0.5em;
 }
 
 #lead_inv1{
-  grid-column: 1;
+  grid-column: auto;
+  grid-row: auto;
+}
+#lead_inv1 button{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.1em;
+  width: 24.2%;
+  height: 40em;
+  margin-top: 0.25%;
+  margin-bottom: 2%;
+  background-color: transparent;
+  border: 1px solid #A0A0A0;
+  border-radius: 5%;
+}
+#lead_inv1 button:hover{
+  background-color: #A0A0A0;
+}
+#recruitment_chair{
+
+}
+#academic_chair{
+
+}
+#self_1{
+  line-height: 1.2;
+}
+#self_2{
+  line-height: 1.5;
 }
 #lead_inv2{
-  grid-column: 2;
-}
-#lead_inv3{
-  grid-column: 3;
+  grid-column: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 2em;
+  line-height: 1;
+  padding-left: 1%;
 }
 /*------------Grid 4----------------*/
 .gridFour{
   grid-row: 7;
   background-image: url("../img/volunteer1.jpg");
-  background-position: center;
+  background-position: stretch;
+  background-size: 100% 200%;
+  border: 10px solid yellow10px solid yellow10px solid yellow10px solid yellow10px solid yellow10px solid yellow10px solid yellow10px solid yellow10px solid yellow10px solid yellow;
 
 }
 #skills_info{
@@ -124,4 +166,13 @@ body{
   display: none;
   font-family: 'Quicksand', 'Light';
   font-size: 0.8em;
+}
+
+@media (max-width:736px){
+  .main button{
+    font-size: 2em;
+  }
+  .main button:hover{
+    font-size: 2.5em;
+  }
 }
