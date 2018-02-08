@@ -50,7 +50,8 @@ body{
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   padding: 0.8em;
-  border: 1px solid black;
+  border-radius: 5%;
+  background-color: #BBBBBB;
 }
 #project_header{
   grid-row: 1;
@@ -75,7 +76,18 @@ body{
 }
 
 .project_slider{
-  height: 2em;
+  height: 5em;
   width: 5em;
   align-self: center;
+  border: none;
+}
+#left_scroll{
+  background-image: url("../img/left.png");
+  background-size: cover;
+  background-color: transparent;
+}
+#right_scroll{
+  background-image: url("../img/right.png");
+  background-size: cover;
+  background-color: transparent;
 }
