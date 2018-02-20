@@ -19,7 +19,7 @@ $(".gridOne").click(function(){
     $("#education_info").css("display","grid");
     expanded=1;
   }else{
-    $(".main").css("grid-template-rows","15em 0em 15em 0em 15em 0em 15em 0em");
+    $(".main").css("grid-template-rows","20em 0em 20em 0em 20em 0em 20em 0em");
     $(".main").css("grid-row-gap","5%");
     $("#education_info").css("display","none");
     expanded=0;
@@ -39,7 +39,7 @@ $(".gridTwo").click(function(){
     $("#work_exp_info").css("display","grid");
     expanded=2;
   }else{
-    $(".main").css("grid-template-rows","15em 0em 15em 0em 15em 0em 15em 0em");
+    $(".main").css("grid-template-rows","20em 0em 20em 0em 20em 0em 20em 0em");
     $(".main").css("grid-row-gap","5%");
     $("#work_exp_info").css("display","none");
     expanded=0;
@@ -59,7 +59,7 @@ $(".gridThree").click(function(){
     $("#lead_inv_info").css("grid-template-rows","15em auto")
     expanded=3;
   }else{
-    $(".main").css("grid-template-rows","15em 0em 15em 0em 15em 0em 15em 0em");
+    $(".main").css("grid-template-rows","20em 0em 20em 0em 20em 0em 20em 0em");
     $(".main").css("grid-row-gap","5%");
     $("#lead_inv_info").css("display","none");
     $("#lead_inv1 button").css("height","20em");
@@ -77,7 +77,7 @@ $(".gridFour").click(function(){
     $("#skills_info").css("display","grid");
     expanded=4;
   }else{
-    $(".main").css("grid-template-rows","15em 0em 15em 0em 15em 0em 15em 0em");
+    $(".main").css("grid-template-rows","20em 0em 20em 0em 20em 0em 20em 0em");
     $(".main").css("grid-row-gap","5%");
     $("#skills_info").css("display","none");
     expanded=0;
@@ -110,11 +110,12 @@ $("#bey_lead_but").click(function(){
   "<p>Schedule consistent events with advanced scheduling and entertaining ideas</p>"+
   "<p>Promote participation of actives along with attendance of potential new members</p>"+
   "<p>Actively contact PNM's and keep chapter involved in membership updates</p>"+
-  "<p><b>Results</b>: Very high quality associate member class with <b>6</b> of the 10 serving on the executive board</p>"+
+  "<p><b>Results</b>: Very high quality associate member class with <b>6</b> of the 10 serving on the executive board</p></div><div id='bey_2'>"+
   "<h3>Service</h3>"+
   "<h5>Pizza and Puppies</h5>"+
   "<p>Raised over $1,500 in support of the Lawrence Humane Society by selling tickets and training at the LHS</p>"+
   "<h5>Relay for Life</h5>"+
+  "<p>Spent time raising funds to support the American Cancer Society through an all night event dedicated to supporting those battling and who have survived cancer.</p>"+
   "</div><div id='bey_3'>"+
 
   "<div style='grid-column: 3' id='academic_chair'><br><br><br><h5>Academic Chair (Spring 2016 - Fall 2016)</h5>"+

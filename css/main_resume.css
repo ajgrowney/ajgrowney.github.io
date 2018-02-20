@@ -2,7 +2,7 @@
 .main{
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 15em 0em 15em 0em 15em 0em 15em 0em;
+  grid-template-rows: 20em 0em 20em 0em 20em 0em 20em 0em;
   grid-row-gap: 0.75em;
   background-color: #EC5E5E;
   align-content: stretch;
@@ -137,12 +137,19 @@ body{
 }
 #bey_1{
   line-height: 1;
+  grid-row: 1;
+  grid-column: 1/2;
+}
+#bey_2{
+  grid-column: 2;
+  grid-row: 1;
 }
 #recruitment_chair{
 
 }
 #academic_chair{
-
+  grid-row: 2;
+  grid-column: 1;
 }
 #self_1{
   line-height: 1.2;
@@ -157,6 +164,14 @@ body{
   font-size: 2em;
   line-height: 1;
   padding-left: 1%;
+}
+#slc_1{
+  grid-row: 1;
+  grid-column: 1;
+}
+#slc_2{
+  grid-row: 1;
+  grid-column: 2;
 }
 /*------------Grid 4----------------*/
 .gridFour{
@@ -180,5 +195,59 @@ body{
   .main button:hover{
     font-size: 1.5em;
   }
-
+  #college{
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  #college_schol_course{
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+  #work_1{
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  #work_2{
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+  #self_1{
+    line-height: 1.2;
+    grid-row: 1;
+    grid-column: 1/4;
+  }
+  #self_2{
+    line-height: 1.2;
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+  #bey_1{
+    line-height: 1;
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  #bey_2{
+    grid-column: 1/4;
+    grid-row: 3;
+  }
+  #academic_chair{
+    grid-row: 1/4;
+    grid-row: 2;
+  }
+  #slc_1{
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+  #slc_2{
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+  #schol_1{
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+  #schol_2{
+    grid-row: 2;
+    grid-column: 1/3;
+  }
 }
