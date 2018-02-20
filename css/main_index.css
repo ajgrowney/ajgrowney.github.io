@@ -111,7 +111,7 @@ body{
 @media (max-width:736px){
   .main{
     grid-template-columns: 100%;
-    grid-template-rows: 15em 10em 30em;
+    grid-template-rows: 10em 10em 32em;
   }
   .about{
     grid-row: 3;

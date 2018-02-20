@@ -32,6 +32,7 @@ var noGracias = {
   objectives: ["Learn C#", "Design a user friendly executable file that is performance and energy efficient", "Create a plan to get the application on the market", "Keep detailed GANTT chart and Scrum Artifacts of the project","Create animations and fun environment for the game"]
 }
 
+
 var myProjects = [myHome,eventPlanner, eventPlanner2, noGracias];
 
 function displayNew(projectTitle){
