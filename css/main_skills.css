@@ -100,8 +100,14 @@ body{
   background-color: transparent;
 }
 @media (max-width: 800px) {
+  .main{
+    grid-template-columns: 13% 74% 13%;
+  }
+  #project_description_pane{
+    font-size: 1em;
+  }
   #project_image img{
-    height: 6em;
+    height: 8em;
     width: 100%;
     margin-left: 0%;
   }
