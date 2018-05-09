@@ -91,7 +91,7 @@ body{
   font-family: 'Quicksand', 'Light';
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #FF5454;
+  background-color: white;
 }
 .basic_contact{
   grid-column: 1;
