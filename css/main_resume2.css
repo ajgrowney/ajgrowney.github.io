@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+.main{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: #EC5E5E;
+  width: 100%;
+}
+.main button{
+  font-family: 'Quicksand', 'Bold';
+  font-size: 3em;
+  font-weight: bold;
+}
+.main button:hover{
+  font-size: 3.5em;
+}
+body{
+  font-family: monospace;
+  background-color: #EC5E5E;
+  height: 100%;
+  width: 100%;
+}
+/*-------Button Styling---------*/
+.main_buttons{
+  /*--Location--*/
+  float: right;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+}
+.main_buttons button{
+  /*--Positioning--*/
+  display: inline-block;
+  float: right;
+  /*--Text and Box Style--*/
+  background-color: transparent;
+  color: black;
+  text-decoration: underline;
+  font-family: 'Quicksand', 'Regular';
+  border: none;
+  /*---Button Spacing---*/
+  margin: 1em;
+  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.mainBut:hover{
+  color: #A8A8A8;
+}
+.header{
+  height: 5em;
+}
+.gridOne{
+    background-image: url("../img/lead_inv2.png");
+    background-position: center;
+    border: none;
+}
+
+.gridTwo{
+    background-image: url("../img/work_exp.jpg");
+    background-position: center;
+    background-size: 100% 250%;
+    border: none;
+  
+}
+
+.gridThree{
+    background-image: url("../img/lead_inv1.jpg");
+    background-position: center;
+    background-size: 100%;
+    border: none;
+}
