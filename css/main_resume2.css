@@ -1,42 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
-.main{
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  background-color: #EC5E5E;
-  width: 100%;
-}
-.main button{
-  font-family: 'Quicksand', 'Bold';
-  font-size: 3em;
-  font-weight: bold;
-}
-.main button:hover{
-  font-size: 3.5em;
-}
-body{
-  font-family: monospace;
-  background-color: #EC5E5E;
+html, body{
   height: 100%;
   width: 100%;
+  font-family: 'Quicksand', 'Regular';
+  background-color: #FF4D43;
+
 }
-/*-------Button Styling---------*/
+
+.main{
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  width: 100%;
+  height: 140%;
+}
+
+/*-------Header Button Styling---------*/
+
 .main_buttons{
   /*--Location--*/
   float: right;
   position: fixed;
-  width: 100%;
+  right: 0;
+  width: 20%;
+  min-width: 215px;
   background-color: transparent;
 }
 .main_buttons button{
   /*--Positioning--*/
-  display: inline-block;
+  display: block;
   float: right;
   /*--Text and Box Style--*/
   background-color: transparent;
   color: black;
   text-decoration: underline;
-  font-family: 'Quicksand', 'Regular';
   border: none;
   /*---Button Spacing---*/
   margin: 1em;
@@ -47,26 +45,57 @@ body{
 .mainBut:hover{
   color: #A8A8A8;
 }
-.header{
-  height: 5em;
+
+/*-----End Button Styling--------- */
+
+.main_grid_obj{
+  height: 33%;
+  min-height: 5em;
+  width: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  border: 3px solid yellow;
 }
-.gridOne{
-    background-image: url("../img/lead_inv2.png");
-    background-position: center;
-    border: none;
+.main_grid_subgrid{
+  width: 49%;
+  float: left;
+  border: 3px solid green;
+}
+.main_comp_head{
+  grid-row: 1/3;
+  border: 3px solid red;
+}
+.main_comp_body{
+  display: none;
+  padding-left: 1%;
+  grid-row: 2;
+  border: 3px solid black;
+}
+.main_comp_head button{
+  width: 100%;
+  height: 100%;
+  font-family: 'Quicksand', 'Bold';
+  font-size: 2em;
+  border: 3px solid blue;
+}
+.main_comp_head #gridOne{
+  background-image: url("../img/lead_inv2.png");
+  background-position: center;
+  border: none;
 }
 
-.gridTwo{
-    background-image: url("../img/work_exp.jpg");
-    background-position: center;
-    background-size: 100% 250%;
-    border: none;
+.main_comp_head #gridTwo{
+  background-image: url("../img/work_exp.jpg");
+  background-position: center;
+  background-size: 100% 250%;
+  border: none;
   
 }
 
-.gridThree{
-    background-image: url("../img/lead_inv1.jpg");
-    background-position: center;
-    background-size: 100%;
-    border: none;
+.main_comp_head #gridThree{
+  background-image: url("../img/lead_inv1.jpg");
+  background-position: center;
+  background-size: 100%;
+  border: none;
 }
