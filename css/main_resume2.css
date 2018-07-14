@@ -99,3 +99,7 @@ html, body{
   background-size: 100%;
   border: none;
 }
+
+@media  (max-width: 768px){
+  
+}
