@@ -1,0 +1,30 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+form {
+    background-color: gray;
+    text-align: center;
+    color: orange;
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    padding-top: 1em;
+}
+form div.form-element{
+    width: 100%;
+}
+div.form-element input[type=text]{
+    width: 14em;
+}
+.track-button{
+    background-color: navy;
+    color: white;
+    height: 3em;
+}
