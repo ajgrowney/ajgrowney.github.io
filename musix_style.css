@@ -1,0 +1,55 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #C3BEA7;
+}
+
+.header{
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+form {
+    background-color: #763712;
+    text-align: center;
+    color: black;
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    padding-top: 1em;
+}
+form div.form-element{
+    width: 100%;
+}
+div.form-element input[type=text]{
+    width: 14em;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+form input[type=submit]{
+    border: none;
+    background-color: #3F4E63;
+    border-radius: 5%;
+    color: #6F7780;
+}
+.track-button{
+    border: none;
+    min-height: 10%;
+    display: inline-block;
+    background-color: #3F4E63;
+    color: white;
+    height: 3em;
+}
+.track-button:hover{
+    background-color: white;
+    color: #3F4E63;
+}
+.lyrics_view{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}

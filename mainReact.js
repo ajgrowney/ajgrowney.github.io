@@ -1,5 +1,3 @@
-
-
 class Track extends React.Component{
     constructor(props){
         super(props);
@@ -44,7 +42,7 @@ class LyricsDisplay extends React.Component{
         if(this.state.view == "list"){
             return(<div>{this.state.songs.map((song) => <Track onClick={() => this.handleClick(song.track.track_id)} key={song.track.track_id} id={song.track.track_id} song={song} />)}</div>)
         }else if(this.state.view == "track"){
-            return(<div>{this.state.songs}</div>)
+            return(<div className="lyrics_view">{this.state.songs}</div>)
         }else{
             return(<div></div>)
         }
@@ -52,27 +50,34 @@ class LyricsDisplay extends React.Component{
     }
 }
 
-class SearchBar extends React.Component {
+class SearchBar extends React.Component{
     constructor(props){
         super(props);
-        this.handler = this.props.handler
+        this.handleClick = this.props.handler;
     }
 
-    render() {
-        return (
-        <form id="searchArea" onSubmit={this.handler}>
-            <input type="text" ref="artistSearch" placeholder="Type an Artist" />
+    render(){
+        return(
+        <form action="javascript:void(0)" id="searchArea" onSubmit={() => this.handleClick(this.refs.trackSearch.value, this.refs.artistSearch.value)}>
+            <div className="form-element">Song: <input type="text" ref="trackSearch" placeholder="Type a Track" /></div>
+            <div className="form-element">Artist: <input type="text" ref="artistSearch" placeholder="Type an Artist" /></div>
+            <br />
             <input value="Get Me My Lyrics" type="submit"/>
         </form>
-        );
+        )
+
+
     }
 }
 
-function GetAPIKey(){
-    return new Promise(function(resolve) {
-        resolve(prompt("Enter your musixmatch api key: "));
-    });
-}
+const GetAPIKey = () => new Promise( (resolve) =>{resolve(
+    swal({
+        title: "MusixMatch API",
+        text: "Enter your musixmatch api key: ",
+        content: "input",
+        button: true
+    })
+)});
 
 class MainApp extends React.Component {
 
@@ -83,11 +88,11 @@ class MainApp extends React.Component {
             lyrics_view: undefined
         }
 
-        GetAPIKey().then((response) => {this.apikey = response});
+        GetAPIKey().then((response) => {console.log(response); this.apikey = response});
     }
 
 
-    makeRequest(track, artist){
+    searchArtistTrack(track, artist){
         const self = this;
         $.ajax({
             type: "GET",
@@ -117,7 +122,7 @@ class MainApp extends React.Component {
             }    
         });
     }
-    makeTrackRequest(track_id){
+    getTrackById(track_id){
         const self = this;
         $.ajax({
             type: "GET",
@@ -151,15 +156,11 @@ class MainApp extends React.Component {
     render() {
         return (
             <div>
-                <form action="javascript:void(0)" id="searchArea" onSubmit={() => this.makeRequest(this.refs.trackSearch.value, this.refs.artistSearch.value)}>
-                    <div className="form-element">Song: <input type="text" ref="trackSearch" placeholder="Type a Track" /></div>
-                    <div className="form-element">Artist: <input type="text" ref="artistSearch" placeholder="Type an Artist" /></div>
-                    <br />
-                    <input value="Get Me My Lyrics" type="submit"/>
-                </form>
-                <LyricsDisplay handler={this.makeTrackRequest.bind(this)} view={this.state.lyrics_view} songs={this.state.songs}/>
+                <SearchBar handler={this.searchArtistTrack.bind(this)} />
+                <LyricsDisplay handler={this.getTrackById.bind(this)} view={this.state.lyrics_view} songs={this.state.songs}/>
             </div>
         );
     }
 }
+
 ReactDOM.render(<MainApp />,document.getElementById('root'));
