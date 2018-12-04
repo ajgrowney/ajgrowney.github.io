@@ -1,0 +1,86 @@
+html, body{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.911);
+    font-family: 'Montserrat';
+}
+.header-expanded{
+    width: 80%;
+    position: static;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    vertical-align: bottom;
+}
+.header-collapsed{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    vertical-align: bottom;
+}
+.main-expanded{
+    padding-top: 5em;
+}
+.main-collapsed{
+    padding-top: 32vw;
+}
+.header-expanded #pro_pic{
+    grid-column: 2;
+    width: 100%;
+}
+h3#name{
+    grid-column: 1;
+    font-size: 5vw;
+    text-align: right;
+    align-self: end;
+    padding-right: 3%;
+}
+span#first_name{color: red;}
+span#last_name{color: blue;}
+span#job{color: gray; font-size: 0.3em;}
+
+.subsection{
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid yellow;
+}
+.subsection .sub-left{
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 1em;
+}
+.subsection .sub-right{
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1em;
+}
+.subsection-title-subtitle{
+    border: 1px solid salmon;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subsection-title-subtitle .title{
+    color: blueviolet;
+}
+.subsection-title-text{
+    padding: 1em;
+}
+.subsection-photo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.photo-description{
+    padding: 1em;
+}
